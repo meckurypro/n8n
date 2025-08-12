@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "packages/cli/dist/index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "packages/cli/dist/index.js"
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production",
+    "N8N_BASIC_AUTH_ACTIVE": "true",
+    "N8N_BASIC_AUTH_USER": "admin",
+    "N8N_BASIC_AUTH_PASSWORD": "password123",
+    "DB_TYPE": "sqlite",
+    "N8N_USER_FOLDER": "/tmp/.n8n",
+    "N8N_PROTOCOL": "https",
+    "WEBHOOK_URL": "https://your-deployment-url.vercel.app/"
+  },
+  "functions": {
+    "packages/cli/dist/index.js": {
+      "maxDuration": 300
+    }
+  }
+}
