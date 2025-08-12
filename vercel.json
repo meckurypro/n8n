@@ -15,12 +15,12 @@
   "env": {
     "NODE_ENV": "production",
     "N8N_BASIC_AUTH_ACTIVE": "true",
-    "N8N_BASIC_AUTH_USER": "admin",
-    "N8N_BASIC_AUTH_PASSWORD": "password123",
+    "N8N_BASIC_AUTH_USER": "meckury",
+    "N8N_BASIC_AUTH_PASSWORD": "Meckmeckury2510!!!!",
     "DB_TYPE": "sqlite",
     "N8N_USER_FOLDER": "/tmp/.n8n",
     "N8N_PROTOCOL": "https",
-    "WEBHOOK_URL": "https://your-deployment-url.vercel.app/"
+    "WEBHOOK_URL": "https://https://n8n-extension-sdk-iota-ten.vercel.app//"
   },
   "functions": {
     "packages/cli/dist/index.js": {
